@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html ng-app="bootcamp">
+  <head>
+    <meta charset='utf-8' />
+      <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+      <meta name="description" content="BootCampOne : HTML5 and CSS3 Class Notes" />
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.js"></script>
+      <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+      <script src="../javascripts/main.js"></script>
+      <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+    <title>Day Five</title>
+  </head>
+
+  <body>
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <h1 id="project_title">Day Five Class Notes</h1>
+          <h3>
+            <a href="http://jamescha.github.io/BootCampOne">Home</a>
+            <p></p>
+           <!-- <a href="dayfourhtml.html" target="_blank">HTML Page</a>
+            <a href="../stylesheets/dayfourcss.css" target="_blank">CSS Page</a> -->
+          </h3>
+        </header>
+    </div>
+    <div id="main_content_wrap" class="outer">
+          <section id="main_content" class="inner">
+           <table>
+              <tbody>
+              <tr>
+                <th>Review</th>
+              </tr>
+              <tr>
+                  <th><h2>HTML</h2></th>
+                </tr>
+                <tr>
+                  <th><h3>&lt;a&gt;</h3></th>
+                </tr>
+                <tr>
+                  <th>
+                    <accordion>
+                      <accordion-group heading="Popup Window/New Window" class="x">&lt;a href="page.html" target="_blank"&gt;Popup Window&lt;/a&gt;</accordion-group>
+                      <accordion-group heading="Drop Down List" class="x"> &lt;select&gt; 
+                              <br> &lt;option value="blue"&gt; Blue &lt;/option&gt; 
+                              <br> &lt;option value="red"&gt; Red &lt;/option&gt; <accordion-group>
+                      <accordion-group heading="Tables" class="x"> &lt;table&gt; <br>
+                                                                   &lt;tr&gt; <br>
+                                                                   &lt;th&gt; Tables &lt;/th&gt; <br>
+                                                                   &lt;th&gt; Are &lt;/th&gt; <br> 
+                                                                   &lt;th&gt; Awesome &lt;/th&gt; <br>
+                                                                   &lt;/tr&gt; <br>
+                                                                   &lt;tr&gt; <br>
+                                                                   &lt;td&gt; 1&lt;/td&gt;<br>
+                                                                   &lt;td&gt; 2&lt;/td&gt;<br>
+                                                                   &lt;td&gt; 3&lt;/td&gt;<br>
+                                                                   &lt;/tr&gt;
+                      </accordion-group>
+                    </accordion>
+                  </th>
+                </tr>
+                <tr>
+                  <th><h2>CSS</h2></th>
+                </tr>
+                <tr>
+                  <th>
+                    <accordion>
+                      <accordion-group heading="List Styles" class="x">
+                        <ul class="x">
+                          <li>ul.a {list-style-type:circle;}</li>
+                          <li>ul.b {list-style-type:square;}</li>
+                          <li>ol.c {list-style-type:upper-roman;}</li>
+                          <li>ol.d {list-style-type:lower-alpha;}</li>
+                          <li><a href="http://www.w3schools.com/cssref/pr_list-style-type.asp" target="_blank">List Styles</a></li>
+                        </ul>
+                      </accordion-group>
+                      <accordion-group heading=".center" class="x">{ margin-left: auto; <br> margin-right: auto;} </accordion-group>
+                      <accordion-group heading="Pseudo Class" class="x"> <table class="reference notranslate">
+                        <tbody><tr>
+                          <th style="width:20%">Selector</th>
+                          <th style="width:17%">Example</th>
+                          <th>Example description</th>
+                        </tr>
+                        <tr>
+                          <td>:link</td>
+                          <td class="notranslate">a:link</td>
+                          <td>Selects all unvisited links</td>
+                        </tr>
+                        <tr>
+                          <td>visited</td>
+                          <td class="notranslate">a:visited</td>
+                          <td>Selects all visited links</td>
+                        </tr>
+                        <tr>
+                          <td>:active</td>
+                          <td class="notranslate">a:active</td>
+                          <td>Selects the active link</td>
+                        </tr>
+                        <tr>
+                          <td>:hover</td>
+                          <td class="notranslate">a:hover</td>
+                          <td>Selects links on mouse over</td>
+                        </tr>
+                        <tr>
+                          <td>:focus</td>
+                          <td class="notranslate">input:focus</td>
+                          <td>Selects the input element which has focus</td>
+                        </tr>
+                        <tr>
+                          <td>:first-letter</td>
+                          <td class="notranslate">p:first-letter</td>
+                          <td>Selects the first letter of every &lt;p&gt; element</td>
+                        </tr>
+                        <tr>
+                          <td>:first-line</td>
+                          <td class="notranslate">p:first-line</td>
+                          <td>Selects the first line of every &lt;p&gt; element</td>
+                        </tr>
+                        <tr>
+                          <td>:first-child</td>
+                          <td class="notranslate">p:first-child</td>
+                          <td>Selects every &lt;p&gt; elements that is the first child of its parent</td>
+                        </tr>
+                        <tr>
+                          <td>:before</td>
+                          <td class="notranslate">p:before</td>
+                          <td>Insert content before every &lt;p&gt; element</td>
+                        </tr>
+                        <tr>
+                          <td>:after</td>
+                          <td class="notranslate">p:after</td>
+                          <td>Insert content after every &lt;p&gt; element</td>
+                        </tr>
+                        <tr>
+                          <td>:lang(<i>language</i>)</td>
+                          <td class="notranslate">p:lang(it)</td>
+                          <td>Selects every &lt;p&gt; element with a lang attribute value starting 
+                        with "it"</td>
+                        </tr>
+                      </tbody></table></accordion-group>
+                      <accordion-group heading=":hover" class="x">a:hover {background-color:yellow} </accordion-group>
+                      <accordion-group heading=":link" class="x">a:link {color: purple} </accordion-group>
+                      <accordion-group heading=":visited" class="x"> a:visited {color: yellow} </accordion-group>
+                      <accordion-group heading=":active" class="x"> a:active {color:white} </accordion-group>
+                      <accordion-group heading="Positioning" class="x"> 
+                        <table class="reference notranslate">
+                            <tbody><tr>
+                              <th style="width:14%">Value</th>
+                              <th>Description</th>
+                            </tr>
+                            <tr>
+                              <td>static</td>
+                              <td>Default value. Elements render in order, as they appear in the document flow</td>
+                            </tr>
+                            <tr>
+                              <td>absolute</td>
+                              <td>The element is positioned relative to its first positioned (not static) 
+                            ancestor element</td>
+                            </tr>
+                            <tr>
+                              <td>fixed</td>
+                              <td>The element is positioned relative to the browser window</td>
+                            </tr>
+                            <tr>
+                              <td>relative</td>
+                              <td>The element is positioned relative to its normal position, so "left:20"
+                                adds 20 pixels to the element's LEFT position</td>
+                            </tr>
+                            <tr>
+                              <td>initial</td>
+                              <td>Sets this property to its default value. </td>
+                              </tr>
+                            <tr>
+                              <td>inherit</td>
+                              <td>Inherits this property from its parent element. </td>
+                              </tr>
+                            </tbody></table>
+                        </accordion-group>
+                          <accordion-group heading="nth-of-type" class="x"> tr:nth-of-type(even) { background-color: black; }
+                        </accordion-group>
+                    </accordion>
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr>
+                  <th>New Conent</th>
+                </tr>
+                <tr>
+                  <th>CSS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <accordion> 
+                      <accordion-group heading=":first-child" class="x">p:first-child {color:blue;}</accordion-group>
+                      <accordion-group heading=":nth-child" class="x">p:nth-child(2n+1) {color:red;}</accordion-group>
+                      <accordion-group heading=":last-child" class="x">p:last-child {color:blue;} </accordion-group>
+                      <accordion-group heading=":nth-last-child" class="x">p:nth-last-child(2) {color:red;} </accordion-group>
+                      <accordion-group heading=":first-of-type" class="x">p:first-of-type {color:blue;} </accordion-group>
+                      <accordion-group heading=":last-of-type" class="x">p:last-of-type {color:blue;} </accordion-group>
+                      <accordion-group heading="column-count" class="x">#id {column-count: 2;} </accordion-group>
+                      <accordion-group heading="column-gap" class="x">#id {column-gap: 20px;} </accordion-group>
+                      <accordion-group heading="column-rule" class="x">#id {column-rule: 1px solid black;} </accordion-group>
+                      <accordion-group heading="width" class="x"> width: 460px; </accordion-group>
+                      <accordion-group heading="width" class="x"> 
+                        <table class="reference notranslate">
+                          <table><tbody><tr>
+                              <th style="width:12%">Value</th>
+                              <th>Description</th>
+                            </tr>  
+                            <tr>
+                              <td>repeat</td>
+                              <td>The background image will be repeated both vertically and
+                                horizontally. This is default</td>
+                            </tr>
+                            <tr>
+                              <td>repeat-x</td>
+                              <td>The background image will be repeated only horizontally</td>
+                            </tr>
+                            <tr>
+                              <td>repeat-y</td>
+                              <td>The background image will be repeated only vertically</td>
+                            </tr>
+                            <tr>
+                              <td>no-repeat</td>
+                              <td>The background-image will not be repeated</td>
+                            </tr>
+                            <tr>
+                              <td>initial</td>
+                              <td>Sets this property to its default value.</td>
+                              </tr>
+                            <tr>
+                              <td>inherit</td>
+                              <td>Inherits this property from its parent element.</td>
+                            <td></td>
+                              </tr></tbody></table>
+                        </accordion-group>
+                        <accordion-group heading="background-size:" class="x">background-size:80px 60px; </accordion-group>
+                        <accordion-group heading="background-size:" class="x">background-size:100% 100%; </accordion-group>
+                        <accordion-group heading="background-origin:" class="x">
+                          <table class="reference notranslate">
+                            <tbody><tr>
+                              <th style="width:20%">Value</th>
+                              <th style="width:68%">Description</th>
+                            </tr>  
+                            <tr>
+                              <td>padding-box</td>
+                              <td>Default value. The background image is positioned relative to the padding box</td>
+                            </tr>
+                            <tr>
+                              <td>border-box</td>
+                              <td>The background image is positioned relative to the border box</td>
+                            </tr>
+                            <tr>
+                              <td>content-box</td>
+                              <td>The background image is positioned relative to the content box</td>
+                            </tr>
+                            <tr>
+                              <td>initial</td>
+                              <td>Sets this property to its default value.</td>
+                              </tr>
+                            <tr>
+                              <td>inherit</td>
+                              <td>Inherits this property from its parent element. </td>
+                            </tr>
+                            </tbody></table>
+                        </accordion-group>
+                        <accordion-group heading="background-clip:" class="x">
+                          <table class="reference notranslate"><tbody><tr>
+                            <th style="width:20%">Value</th>
+                            <th style="width:68%">Description</th>
+                          </tr>  
+                          <tr>
+                            <td>border-box</td>
+                            <td>Default value. The background is clipped to the border box</td>
+                          </tr>
+                          <tr>
+                            <td>padding-box</td>
+                            <td>The background is clipped to the padding box</td>
+                          </tr>
+                          <tr>
+                            <td>content-box</td>
+                            <td>The background is clipped to the content box</td>
+                          </tr>
+                          <tr>
+                            <td>initial</td>
+                            <td>Sets this property to its default value. </td>
+                            </tr>
+                          <tr>
+                            <td>inherit</td>
+                            <td>Inherits this property from its parent element.</td>
+                            </tr></tbody></table>
+                        </accordion-group>
+                        <accordion-group heading="background-position:" class="x">
+                          <table class="reference notranslate"><tbody><tr>
+                              <th style="width:18%">Value</th>
+                              <th>Description</th>
+                            </tr>  
+                            <tr>
+                              <td>left top<br>
+                                left center<br>
+                                left bottom<br>
+                                right top<br>
+                                right center<br>
+                                right bottom<br>
+                                center top<br>
+                                center center<br>
+                                center bottom</td>
+                              <td>If you only specify one keyword, the other value will be "center"</td>
+                            </tr>
+                            <tr>
+                              <td><i>x% y%</i></td>
+                              <td>The first value is the horizontal position and the second
+                                value is the vertical. The top left corner is 0% 0%.
+                                The right bottom corner is 100% 100%. If you only specify one
+                                value, the other value will be 50%. . Default value is: 0% 0%</td>
+                            </tr>
+                            <tr>
+                              <td><i>xpos ypos</i></td>
+                              <td>The first value&nbsp;is the horizontal position and the second
+                                value is the vertical. The top left corner is 0 0. Units can be pixels
+                                (0px 0px) or any other <a href="http://www.w3schools.com/cssref/css_units.asp">CSS units</a>. If you only specify one value, the other 
+                            value will be 50%. You can mix % and positions</td>
+                            </tr>
+                            <tr>
+                              <td>initial</td>
+                              <td>Sets this property to its default value.</td>
+                              </tr>
+                            <tr>
+                              <td>inherit</td>
+                              <td>Inherits this property from its parent element. </td>
+                            </tr>
+                          </tbody></table>
+                        </accordion-group>
+                        <accordion-group heading="text-indent:" class="x">
+                          <table class="reference notranslate"><tbody><tr>
+                              <th style="width:14%">Value</th>
+                              <th>Description</th>
+                            </tr>  
+                            <tr>
+                              <td><i>length</i></td>
+                              <td>Defines a fixed indentation in px, pt, cm, em, etc. Default value is 0</td>
+                            </tr>
+                            <tr>
+                              <td><i>%</i></td>
+                              <td>Defines the indentation in % of the width of the parent 
+                            element</td>
+                            </tr>
+                            <tr>
+                              <td>initial</td>
+                              <td>Sets this property to its default value.</td>
+                              </tr>
+                            <tr>
+                              <td>inherit</td>
+                              <td>Inherits this property from its parent element.</td>
+                            </tr>
+                          </tbody></table>
+                        </accordion-group>
+                    </accordion>
+                  </th>
+                </tr>
+              </tbody>              
+            </table>
+          </section>
+        </div>
+  </body>
+</html>
